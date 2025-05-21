@@ -4,13 +4,15 @@ import jakarta.persistence.*;
 
 import java.sql.Date;
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue
+    @Column(name = "user_id")
     private UUID userId;
 
     @Column(name = "first_name", nullable = false, length = 60)
@@ -44,6 +46,7 @@ public class User {
 
     @Column(name = "modified_at")
     private Instant modifiedAt;
+
 
     public UUID getUserId() {
         return userId;
