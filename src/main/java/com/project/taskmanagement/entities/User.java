@@ -26,7 +26,7 @@ public class User {
 
     @OneToOne
     @JoinColumn(name = "role_id")
-    private Role role;
+    private UUID role;
 
     @OneToOne
     @JoinColumn(name = "user_id")
@@ -85,12 +85,12 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public Role getRole() {
+    public UUID getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRoleID(UUID roleID) {
+        this.role = roleID;
     }
 
     public User getCreatedBy() {
