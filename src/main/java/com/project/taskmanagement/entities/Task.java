@@ -1,4 +1,4 @@
-package com.project.taskmanagement.entity;
+package com.project.taskmanagement.entities;
 
 import jakarta.persistence.*;
 import java.sql.Timestamp;

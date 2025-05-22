@@ -1,11 +1,8 @@
-package com.project.taskmanagement.entity;
+package com.project.taskmanagement.entities;
 
 import jakarta.persistence.*;
 
-import java.sql.Date;
 import java.time.Instant;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.UUID;
 
 @Entity
